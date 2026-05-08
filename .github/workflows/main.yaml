@@ -16,10 +16,10 @@ jobs:
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
       
-      - name: Set up Go 1.25.8
+      - name: Set up Go 1.25.10
         uses: actions/setup-go@7a3fe6cf4cb3a834922a1244abfce67bcef6a0c5 # v6.2.0
         with:
-          go-version: 1.25.8
+          go-version: 1.25.10
           check-latest: true
 
       # 1. Linter (Code Style & Bugs)
@@ -32,7 +32,7 @@ jobs:
       - name: Security Scan
         uses: golang/govulncheck-action@b625fbe08f3bccbe446d94fbf87fcc875a4f50ee # v1.0.4
         with:
-          go-version-input: 1.25.8
+          go-version-input: 1.25.10
           repo-checkout: false
 
   build:
@@ -46,10 +46,10 @@ jobs:
         run: echo "$GHCR_TOKEN" | docker login ghcr.io -u wquintal --password-stdin
         env:
           GHCR_TOKEN: ${{ secrets.GHCR_TOKEN }}
-      - name: Set up Go 1.25.8
+      - name: Set up Go 1.25.10
         uses: actions/setup-go@7a3fe6cf4cb3a834922a1244abfce67bcef6a0c5 # v6.2.0
         with:
-          go-version: 1.25.8
+          go-version: 1.25.10
           check-latest: true
           cache-dependency-path: |
             go.sum
@@ -108,10 +108,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
 
-      - name: Set up Go 1.25.8
+      - name: Set up Go 1.25.10
         uses: actions/setup-go@v6
         with:
-          go-version: 1.25.8
+          go-version: 1.25.10
           check-latest: true
           cache-dependency-path: |
             go.sum
