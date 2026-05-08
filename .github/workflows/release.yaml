@@ -29,9 +29,9 @@ jobs:
         run: echo "tag=${GITHUB_REF#refs/*/}" >> $GITHUB_OUTPUT
 
       - name: Login docker
-        run: echo "$GITHUB_ACCESS_TOKEN" | docker login ghcr.io -u wquintal --password-stdin
+        run: echo "$GHCR_TOKEN" | docker login ghcr.io -u wquintal --password-stdin
         env:
-          GITHUB_ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          GHCR_TOKEN: ${{ secrets.GHCR_TOKEN }}
       
       - name: Docker build
         run: docker build -t ghcr.io/estran-studio/logviewer:${VERSION} .
