@@ -19,8 +19,8 @@ import (
 
 	"sync"
 
-	logclient "github.com/bascanada/logviewer/pkg/log/client"
-	"github.com/bascanada/logviewer/pkg/log/reader"
+	logclient "github.com/estran-studio/logviewer/pkg/log/client"
+	"github.com/estran-studio/logviewer/pkg/log/reader"
 )
 
 const regexDockerTimestamp = "(([0-9]*)-([0-9]*)-([0-9]*)T([0-9]*):([0-9]*):([0-9]*).([0-9]*)Z)"

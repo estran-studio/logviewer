@@ -5,7 +5,7 @@ info:
   version: 1.0.0
   contact:
     name: Logviewer API
-    url: https://github.com/bascanada/logviewer
+    url: https://github.com/estran-studio/logviewer
 
 servers:
   - url: http://localhost:8080

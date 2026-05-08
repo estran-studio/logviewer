@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/bascanada/logviewer/pkg/log/printer"
+	"github.com/estran-studio/logviewer/pkg/log/printer"
 	"github.com/stretchr/testify/assert"
 )
 

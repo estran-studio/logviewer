@@ -50,7 +50,7 @@ package cmd_test
 
 import (
     "testing"
-    "github.com/bascanada/logviewer/pkg/log/client"
+    "github.com/estran-studio/logviewer/pkg/log/client"
     "github.com/stretchr/testify/assert"
 )
 

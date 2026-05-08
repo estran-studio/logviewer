@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/bascanada/logviewer/pkg/http"
-	"github.com/bascanada/logviewer/pkg/ty"
+	"github.com/estran-studio/logviewer/pkg/http"
+	"github.com/estran-studio/logviewer/pkg/ty"
 )
 
 // SearchJobResponse holds the response for a search job creation.

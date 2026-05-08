@@ -6,7 +6,7 @@ import (
 	"sort"
 	"text/tabwriter"
 
-	"github.com/bascanada/logviewer/pkg/log/client/config"
+	"github.com/estran-studio/logviewer/pkg/log/client/config"
 	"github.com/spf13/cobra"
 )
 

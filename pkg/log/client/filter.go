@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/bascanada/logviewer/pkg/log/client/operator"
+	"github.com/estran-studio/logviewer/pkg/log/client/operator"
 )
 
 // LogicOperator defines logical operators for combining filters (AND, OR, NOT).

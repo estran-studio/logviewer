@@ -10,9 +10,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/bascanada/logviewer/pkg/log/client"
-	"github.com/bascanada/logviewer/pkg/log/client/config"
-	"github.com/bascanada/logviewer/pkg/ty"
+	"github.com/estran-studio/logviewer/pkg/log/client"
+	"github.com/estran-studio/logviewer/pkg/log/client/config"
+	"github.com/estran-studio/logviewer/pkg/ty"
 	"github.com/charmbracelet/huh"
 	"github.com/spf13/cobra"
 	"gopkg.in/yaml.v3"

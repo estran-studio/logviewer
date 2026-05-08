@@ -1,8 +1,8 @@
 package kibana
 
 import (
-	"github.com/bascanada/logviewer/pkg/log/impl/elk"
-	"github.com/bascanada/logviewer/pkg/ty"
+	"github.com/estran-studio/logviewer/pkg/log/impl/elk"
+	"github.com/estran-studio/logviewer/pkg/ty"
 )
 
 // Body represents the body of a Kibana/Elasticsearch search request.

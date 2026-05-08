@@ -7,10 +7,10 @@ import (
 	"context"
 	"testing"
 
-	"github.com/bascanada/logviewer/pkg/adapter/hl"
-	logclient "github.com/bascanada/logviewer/pkg/log/client"
-	"github.com/bascanada/logviewer/pkg/log/client/operator"
-	"github.com/bascanada/logviewer/pkg/ty"
+	"github.com/estran-studio/logviewer/pkg/adapter/hl"
+	logclient "github.com/estran-studio/logviewer/pkg/log/client"
+	"github.com/estran-studio/logviewer/pkg/log/client/operator"
+	"github.com/estran-studio/logviewer/pkg/ty"
 	"github.com/stretchr/testify/assert"
 )
 

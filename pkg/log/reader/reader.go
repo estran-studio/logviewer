@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/bascanada/logviewer/pkg/log/client"
-	"github.com/bascanada/logviewer/pkg/ty"
+	"github.com/estran-studio/logviewer/pkg/log/client"
+	"github.com/estran-studio/logviewer/pkg/ty"
 )
 
 // LogResult wraps a generic io.Reader (scanner) as a LogSearchResult.

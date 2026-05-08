@@ -9,8 +9,8 @@ import (
 
 	"github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs"
 	"github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs/types"
-	"github.com/bascanada/logviewer/pkg/log/client"
-	"github.com/bascanada/logviewer/pkg/ty"
+	"github.com/estran-studio/logviewer/pkg/log/client"
+	"github.com/estran-studio/logviewer/pkg/ty"
 )
 
 // LogSearchResult implements LogSearchResult for CloudWatch.

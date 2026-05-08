@@ -4,7 +4,7 @@ package http
 import (
 	"testing"
 
-	"github.com/bascanada/logviewer/pkg/ty"
+	"github.com/estran-studio/logviewer/pkg/ty"
 	"github.com/h2non/gock"
 	"github.com/stretchr/testify/assert"
 )

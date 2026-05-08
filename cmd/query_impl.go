@@ -9,9 +9,9 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/bascanada/logviewer/pkg/log/client"
-	"github.com/bascanada/logviewer/pkg/log/factory"
-	"github.com/bascanada/logviewer/pkg/ty"
+	"github.com/estran-studio/logviewer/pkg/log/client"
+	"github.com/estran-studio/logviewer/pkg/log/factory"
+	"github.com/estran-studio/logviewer/pkg/ty"
 )
 
 // ConfiguredLogClient implements LogClient for config-based (multi-context) searches.

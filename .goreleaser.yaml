@@ -15,7 +15,7 @@ builds:
       - amd64
       - arm64
     ldflags:
-      - -s -w -X github.com/bascanada/logviewer/cmd.sha1ver={{ .Version }}
+      - -s -w -X github.com/estran-studio/logviewer/cmd.sha1ver={{ .Version }}
 
 archives:
   - id: default
@@ -59,24 +59,24 @@ changelog:
 
 brews:
   - repository:
-      owner: bascanada
+      owner: estran-studio
       name: homebrew-tap
       token: "{{ .Env.TAP_GITHUB_TOKEN }}"
     directory: Formula
 
 scoops:
   - repository:
-      owner: bascanada
+      owner: estran-studio
       name: scoop-bucket
       token: "{{ .Env.TAP_GITHUB_TOKEN }}"
 
-    homepage: "https://github.com/bascanada/logviewer"
+    homepage: "https://github.com/estran-studio/logviewer"
     description: "CLI log client for multiple sources (Splunk, K8s, Docker, etc)"
     license: "GPL-3.0-or-later"
 
 aurs:
   - name: logviewer-bin
-    homepage: "https://github.com/bascanada/logviewer"
+    homepage: "https://github.com/estran-studio/logviewer"
     description: "CLI log client for multiple sources (Splunk, K8s, Docker, etc)"
     maintainers:
       - "wquintal <williamquintal95@gmail.com>"

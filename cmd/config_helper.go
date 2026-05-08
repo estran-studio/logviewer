@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/bascanada/logviewer/pkg/log/client/config"
+	"github.com/estran-studio/logviewer/pkg/log/client/config"
 )
 
 func loadConfig(path string) (*config.ContextConfig, []string, error) {

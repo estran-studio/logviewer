@@ -9,9 +9,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/bascanada/logviewer/pkg/log/client"
-	"github.com/bascanada/logviewer/pkg/log/impl/splunk/restapi"
-	"github.com/bascanada/logviewer/pkg/ty"
+	"github.com/estran-studio/logviewer/pkg/log/client"
+	"github.com/estran-studio/logviewer/pkg/log/impl/splunk/restapi"
+	"github.com/estran-studio/logviewer/pkg/ty"
 )
 
 // SplunkLogSearchResult implements LogSearchResult for Splunk.

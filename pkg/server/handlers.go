@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/bascanada/logviewer/pkg/log/client"
+	"github.com/estran-studio/logviewer/pkg/log/client"
 )
 
 // QueryRequest defines the structure for query requests.

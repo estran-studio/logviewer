@@ -3,9 +3,9 @@ package query_test
 import (
 	"testing"
 
-	"github.com/bascanada/logviewer/pkg/log/client"
-	"github.com/bascanada/logviewer/pkg/log/client/operator"
-	"github.com/bascanada/logviewer/pkg/query"
+	"github.com/estran-studio/logviewer/pkg/log/client"
+	"github.com/estran-studio/logviewer/pkg/log/client/operator"
+	"github.com/estran-studio/logviewer/pkg/query"
 )
 
 func TestIsHLSyntax(t *testing.T) {

@@ -5,11 +5,11 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/bascanada/logviewer/pkg/http"
-	"github.com/bascanada/logviewer/pkg/log/client"
-	"github.com/bascanada/logviewer/pkg/log/client/operator"
-	"github.com/bascanada/logviewer/pkg/log/impl/elk"
-	"github.com/bascanada/logviewer/pkg/ty"
+	"github.com/estran-studio/logviewer/pkg/http"
+	"github.com/estran-studio/logviewer/pkg/log/client"
+	"github.com/estran-studio/logviewer/pkg/log/client/operator"
+	"github.com/estran-studio/logviewer/pkg/log/impl/elk"
+	"github.com/estran-studio/logviewer/pkg/ty"
 	"github.com/stretchr/testify/assert"
 )
 

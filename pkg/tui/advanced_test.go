@@ -8,10 +8,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/bascanada/logviewer/pkg/log/client"
-	"github.com/bascanada/logviewer/pkg/log/client/config"
-	"github.com/bascanada/logviewer/pkg/log/client/operator"
-	"github.com/bascanada/logviewer/pkg/ty"
+	"github.com/estran-studio/logviewer/pkg/log/client"
+	"github.com/estran-studio/logviewer/pkg/log/client/config"
+	"github.com/estran-studio/logviewer/pkg/log/client/operator"
+	"github.com/estran-studio/logviewer/pkg/ty"
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/x/exp/teatest"
 )

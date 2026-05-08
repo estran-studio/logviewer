@@ -21,6 +21,6 @@ jobs:
         uses: peter-evans/repository-dispatch@28959ce8df70de7be546dd1250a005dd32156697 # v4.0.1
         with:
           token: ${{ secrets.ACCESS_TOKEN }}
-          repository: bascanada/public
+          repository: estran-studio/public
           event-type: update-docs
           client-payload: '{"source_commit": "${{ github.sha }}", "message": "Update triggered by logviewer README/GIF change"}'

@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/bascanada/logviewer/pkg/log/client"
+	"github.com/estran-studio/logviewer/pkg/log/client"
 )
 
 func writeTemp(t *testing.T, dir, name, content string) string {

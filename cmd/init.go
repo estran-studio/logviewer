@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"strings"
 
-	httpPkg "github.com/bascanada/logviewer/pkg/http"
-	"github.com/bascanada/logviewer/pkg/log"
-	"github.com/bascanada/logviewer/pkg/log/client"
-	"github.com/bascanada/logviewer/pkg/log/client/config"
-	"github.com/bascanada/logviewer/pkg/log/impl/ssh"
+	httpPkg "github.com/estran-studio/logviewer/pkg/http"
+	"github.com/estran-studio/logviewer/pkg/log"
+	"github.com/estran-studio/logviewer/pkg/log/client"
+	"github.com/estran-studio/logviewer/pkg/log/client/config"
+	"github.com/estran-studio/logviewer/pkg/log/impl/ssh"
 	"github.com/spf13/cobra"
 )
 

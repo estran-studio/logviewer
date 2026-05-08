@@ -6,7 +6,7 @@ import (
 	"context"
 	"os"
 
-	"github.com/bascanada/logviewer/pkg/log/client"
+	"github.com/estran-studio/logviewer/pkg/log/client"
 )
 
 // PrintPrinter prints results to standard output.

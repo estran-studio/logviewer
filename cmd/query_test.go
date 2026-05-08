@@ -6,9 +6,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/bascanada/logviewer/pkg/log/client"
-	"github.com/bascanada/logviewer/pkg/log/client/config"
-	"github.com/bascanada/logviewer/pkg/ty"
+	"github.com/estran-studio/logviewer/pkg/log/client"
+	"github.com/estran-studio/logviewer/pkg/log/client/config"
+	"github.com/estran-studio/logviewer/pkg/ty"
 	"github.com/stretchr/testify/assert"
 )
 

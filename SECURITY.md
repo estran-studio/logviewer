@@ -4,7 +4,7 @@
 
 If you discover a security vulnerability, please do not open a public issue. 
 
-Instead, please report it via [GitHub Security Advisories](https://github.com/bascanada/logviewer/security/advisories/new).
+Instead, please report it via [GitHub Security Advisories](https://github.com/estran-studio/logviewer/security/advisories/new).
 
 We take all security vulnerabilities seriously and will respond promptly to valid reports.
 

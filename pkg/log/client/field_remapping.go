@@ -1,7 +1,7 @@
 // Package client provides definitions for log clients and search structures.
 package client
 
-import "github.com/bascanada/logviewer/pkg/ty"
+import "github.com/estran-studio/logviewer/pkg/ty"
 
 // FieldRemapping handles remapping of field names.
 type FieldRemapping struct{}

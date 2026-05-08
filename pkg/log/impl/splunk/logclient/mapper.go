@@ -5,9 +5,9 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/bascanada/logviewer/pkg/log/client"
-	"github.com/bascanada/logviewer/pkg/log/client/operator"
-	"github.com/bascanada/logviewer/pkg/ty"
+	"github.com/estran-studio/logviewer/pkg/log/client"
+	"github.com/estran-studio/logviewer/pkg/log/client/operator"
+	"github.com/estran-studio/logviewer/pkg/ty"
 )
 
 // transformingCommands lists Splunk commands that transform events into results.

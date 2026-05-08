@@ -11,8 +11,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/bascanada/logviewer/pkg/log/client/config"
-	"github.com/bascanada/logviewer/pkg/log/factory"
+	"github.com/estran-studio/logviewer/pkg/log/client/config"
+	"github.com/estran-studio/logviewer/pkg/log/factory"
 )
 
 // Server represents the API server instance.

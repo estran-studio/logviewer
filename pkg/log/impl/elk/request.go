@@ -6,8 +6,8 @@ import (
 	"errors"
 	"time"
 
-	"github.com/bascanada/logviewer/pkg/log/client"
-	"github.com/bascanada/logviewer/pkg/ty"
+	"github.com/estran-studio/logviewer/pkg/log/client"
+	"github.com/estran-studio/logviewer/pkg/ty"
 )
 
 // GetDateRange calculates the date range (gte, lte) for a search.

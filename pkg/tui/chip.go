@@ -1,7 +1,7 @@
 // Package tui provides the terminal user interface components.
 package tui
 
-import "github.com/bascanada/logviewer/pkg/log/client"
+import "github.com/estran-studio/logviewer/pkg/log/client"
 
 // ChipType categorizes different search components
 type ChipType int

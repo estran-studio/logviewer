@@ -10,10 +10,10 @@ import (
 	"runtime"
 	"text/template"
 
-	"github.com/bascanada/logviewer/pkg/adapter/hl"
-	mylog "github.com/bascanada/logviewer/pkg/log"
-	"github.com/bascanada/logviewer/pkg/log/client"
-	"github.com/bascanada/logviewer/pkg/log/reader"
+	"github.com/estran-studio/logviewer/pkg/adapter/hl"
+	mylog "github.com/estran-studio/logviewer/pkg/log"
+	"github.com/estran-studio/logviewer/pkg/log/client"
+	"github.com/estran-studio/logviewer/pkg/log/reader"
 )
 
 const (

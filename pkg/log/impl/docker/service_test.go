@@ -7,8 +7,8 @@ import (
 	"io"
 	"testing"
 
-	logclient "github.com/bascanada/logviewer/pkg/log/client"
-	"github.com/bascanada/logviewer/pkg/ty"
+	logclient "github.com/estran-studio/logviewer/pkg/log/client"
+	"github.com/estran-studio/logviewer/pkg/ty"
 	"github.com/docker/docker/api/types"
 	"github.com/docker/docker/api/types/container"
 	"github.com/stretchr/testify/assert"

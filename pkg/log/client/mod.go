@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/bascanada/logviewer/pkg/ty"
+	"github.com/estran-studio/logviewer/pkg/ty"
 )
 
 // LogEntry represents a single log record.

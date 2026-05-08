@@ -4,8 +4,8 @@ package tui
 import (
 	"context"
 
-	"github.com/bascanada/logviewer/pkg/log/client"
-	"github.com/bascanada/logviewer/pkg/ty"
+	"github.com/estran-studio/logviewer/pkg/log/client"
+	"github.com/estran-studio/logviewer/pkg/ty"
 	tea "github.com/charmbracelet/bubbletea"
 )
 

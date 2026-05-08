@@ -9,8 +9,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/bascanada/logviewer/pkg/log/client"
-	"github.com/bascanada/logviewer/pkg/ty"
+	"github.com/estran-studio/logviewer/pkg/log/client"
+	"github.com/estran-studio/logviewer/pkg/ty"
 )
 
 // Hit represents a single hit returned by Elasticsearch for a document.

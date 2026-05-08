@@ -10,10 +10,10 @@ import (
 	"strings"
 	"time"
 
-	httpPkg "github.com/bascanada/logviewer/pkg/http"
-	"github.com/bascanada/logviewer/pkg/log/client"
-	"github.com/bascanada/logviewer/pkg/log/impl/splunk/restapi"
-	"github.com/bascanada/logviewer/pkg/ty"
+	httpPkg "github.com/estran-studio/logviewer/pkg/http"
+	"github.com/estran-studio/logviewer/pkg/log/client"
+	"github.com/estran-studio/logviewer/pkg/log/impl/splunk/restapi"
+	"github.com/estran-studio/logviewer/pkg/ty"
 )
 
 // Increase the retry limit because Splunk search jobs can take several seconds

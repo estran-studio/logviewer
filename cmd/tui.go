@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/bascanada/logviewer/pkg/log/client"
-	"github.com/bascanada/logviewer/pkg/log/factory"
-	"github.com/bascanada/logviewer/pkg/tui"
+	"github.com/estran-studio/logviewer/pkg/log/client"
+	"github.com/estran-studio/logviewer/pkg/log/factory"
+	"github.com/estran-studio/logviewer/pkg/tui"
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/spf13/cobra"
 )

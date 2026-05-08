@@ -17,15 +17,15 @@ K3S_KUBECONFIG=integration/infra/k8s/k3s.yaml
 
 build:
 	@echo "building (debug-friendly) version $(VERSION) for current platform"
-	@go build -ldflags "-X github.com/bascanada/logviewer/cmd.sha1ver=$(VERSION)" -o build/logviewer
+	@go build -ldflags "-X github.com/estran-studio/logviewer/cmd.sha1ver=$(VERSION)" -o build/logviewer
 
 
 build/all:
 	@echo "building (debug-friendly) version $(VERSION) for all platforms"
-	@GOOS=linux GOARCH=arm64 go build -ldflags "-X github.com/bascanada/logviewer/cmd.sha1ver=$(VERSION)" -o build/logviewer-linux-arm64
-	@GOOS=linux GOARCH=amd64 go build -ldflags "-X github.com/bascanada/logviewer/cmd.sha1ver=$(VERSION)" -o build/logviewer-linux-amd64
-	@GOOS=darwin GOARCH=arm64 go build -ldflags "-X github.com/bascanada/logviewer/cmd.sha1ver=$(VERSION)" -o build/logviewer-darwin-arm64
-	@GOOS=darwin GOARCH=amd64 go build -ldflags "-X github.com/bascanada/logviewer/cmd.sha1ver=$(VERSION)" -o build/logviewer-darwin-amd64
+	@GOOS=linux GOARCH=arm64 go build -ldflags "-X github.com/estran-studio/logviewer/cmd.sha1ver=$(VERSION)" -o build/logviewer-linux-arm64
+	@GOOS=linux GOARCH=amd64 go build -ldflags "-X github.com/estran-studio/logviewer/cmd.sha1ver=$(VERSION)" -o build/logviewer-linux-amd64
+	@GOOS=darwin GOARCH=arm64 go build -ldflags "-X github.com/estran-studio/logviewer/cmd.sha1ver=$(VERSION)" -o build/logviewer-darwin-arm64
+	@GOOS=darwin GOARCH=amd64 go build -ldflags "-X github.com/estran-studio/logviewer/cmd.sha1ver=$(VERSION)" -o build/logviewer-darwin-amd64
 
 
 # Optimized / stripped release build (smaller binary, no DWARF/debug, trimmed paths)
@@ -35,7 +35,7 @@ release:
 	@echo "building optimized release version $(VERSION) for $(or $(GOOS),current platform)/$(or $(GOARCH),current arch)"
 	@mkdir -p build
 	@CGO_ENABLED=${CGO_ENABLED-0} go build -trimpath -buildvcs=false \
-		-ldflags "-s -w -X github.com/bascanada/logviewer/cmd.sha1ver=$(VERSION)" \
+		-ldflags "-s -w -X github.com/estran-studio/logviewer/cmd.sha1ver=$(VERSION)" \
 		-o $(OUTPUT)
 	@echo "binary size: $$(wc -c < $(OUTPUT)) bytes"
 	@echo "(add optional compression: upx --best $(OUTPUT))"

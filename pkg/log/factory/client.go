@@ -7,17 +7,17 @@ import (
 	"errors"
 	"runtime"
 
-	"github.com/bascanada/logviewer/pkg/log/client"
-	"github.com/bascanada/logviewer/pkg/log/client/config"
-	"github.com/bascanada/logviewer/pkg/log/impl/cloudwatch"
-	"github.com/bascanada/logviewer/pkg/log/impl/docker"
-	"github.com/bascanada/logviewer/pkg/log/impl/elk/kibana"
-	"github.com/bascanada/logviewer/pkg/log/impl/elk/opensearch"
-	"github.com/bascanada/logviewer/pkg/log/impl/k8s"
-	"github.com/bascanada/logviewer/pkg/log/impl/local"
-	splunk "github.com/bascanada/logviewer/pkg/log/impl/splunk/logclient"
-	"github.com/bascanada/logviewer/pkg/log/impl/ssh"
-	"github.com/bascanada/logviewer/pkg/ty"
+	"github.com/estran-studio/logviewer/pkg/log/client"
+	"github.com/estran-studio/logviewer/pkg/log/client/config"
+	"github.com/estran-studio/logviewer/pkg/log/impl/cloudwatch"
+	"github.com/estran-studio/logviewer/pkg/log/impl/docker"
+	"github.com/estran-studio/logviewer/pkg/log/impl/elk/kibana"
+	"github.com/estran-studio/logviewer/pkg/log/impl/elk/opensearch"
+	"github.com/estran-studio/logviewer/pkg/log/impl/k8s"
+	"github.com/estran-studio/logviewer/pkg/log/impl/local"
+	splunk "github.com/estran-studio/logviewer/pkg/log/impl/splunk/logclient"
+	"github.com/estran-studio/logviewer/pkg/log/impl/ssh"
+	"github.com/estran-studio/logviewer/pkg/ty"
 )
 
 const (

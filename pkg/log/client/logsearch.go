@@ -1,8 +1,8 @@
 package client
 
 import (
-	"github.com/bascanada/logviewer/pkg/log/client/operator"
-	"github.com/bascanada/logviewer/pkg/ty"
+	"github.com/estran-studio/logviewer/pkg/log/client/operator"
+	"github.com/estran-studio/logviewer/pkg/ty"
 )
 
 // VariableDefinition describes a dynamic parameter for a search context.

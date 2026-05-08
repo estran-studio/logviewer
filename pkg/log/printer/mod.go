@@ -8,7 +8,7 @@ import (
 	"regexp"
 	"text/template"
 
-	"github.com/bascanada/logviewer/pkg/log/client"
+	"github.com/estran-studio/logviewer/pkg/log/client"
 )
 
 // LogPrinter represents an entity capable of rendering log search results to

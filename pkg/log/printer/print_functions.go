@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/TylerBrock/colorjson"
-	"github.com/bascanada/logviewer/pkg/ty"
+	"github.com/estran-studio/logviewer/pkg/ty"
 	"github.com/fatih/color"
 )
 

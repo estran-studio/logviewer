@@ -6,7 +6,7 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/bascanada/logviewer/pkg/ty"
+	"github.com/estran-studio/logviewer/pkg/ty"
 )
 
 // MultiLogSearchResult aggregates multiple LogSearchResult objects into a single,

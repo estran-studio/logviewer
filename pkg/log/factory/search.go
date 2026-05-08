@@ -5,8 +5,8 @@ package factory
 import (
 	"context"
 
-	"github.com/bascanada/logviewer/pkg/log/client"
-	"github.com/bascanada/logviewer/pkg/log/client/config"
+	"github.com/estran-studio/logviewer/pkg/log/client"
+	"github.com/estran-studio/logviewer/pkg/log/client/config"
 )
 
 // SearchFactory exposes methods to construct or retrieve search contexts

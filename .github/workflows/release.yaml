@@ -34,12 +34,12 @@ jobs:
           GITHUB_ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
       
       - name: Docker build
-        run: docker build -t ghcr.io/bascanada/logviewer:${VERSION} .
+        run: docker build -t ghcr.io/estran-studio/logviewer:${VERSION} .
         env:
           VERSION: ${{ steps.tag.outputs.tag }}
       
       - name: Docker push
-        run: docker push ghcr.io/bascanada/logviewer:${VERSION}
+        run: docker push ghcr.io/estran-studio/logviewer:${VERSION}
         env:
           VERSION: ${{ steps.tag.outputs.tag }}
 

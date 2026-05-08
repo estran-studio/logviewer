@@ -13,7 +13,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/bascanada/logviewer/pkg/ty"
+	"github.com/estran-studio/logviewer/pkg/ty"
 )
 
 // TLSConfig holds TLS-related configuration for HTTP clients

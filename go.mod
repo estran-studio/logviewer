@@ -1,4 +1,4 @@
-module github.com/bascanada/logviewer
+module github.com/estran-studio/logviewer
 
 go 1.25.7
 

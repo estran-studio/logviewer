@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/bascanada/logviewer/pkg/log/client"
+	"github.com/estran-studio/logviewer/pkg/log/client"
 	"github.com/charmbracelet/lipgloss"
 )
 

@@ -6,11 +6,11 @@ import (
 	"context"
 	"errors"
 
-	"github.com/bascanada/logviewer/pkg/http"
-	"github.com/bascanada/logviewer/pkg/log/client"
-	"github.com/bascanada/logviewer/pkg/log/client/operator"
-	"github.com/bascanada/logviewer/pkg/log/impl/elk"
-	"github.com/bascanada/logviewer/pkg/ty"
+	"github.com/estran-studio/logviewer/pkg/http"
+	"github.com/estran-studio/logviewer/pkg/log/client"
+	"github.com/estran-studio/logviewer/pkg/log/client/operator"
+	"github.com/estran-studio/logviewer/pkg/log/impl/elk"
+	"github.com/estran-studio/logviewer/pkg/ty"
 )
 
 // HTTPClient defines the subset of the HTTP client interface used by this package.

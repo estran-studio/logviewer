@@ -4,18 +4,18 @@
 
 | Build & Quality | Testing & Coverage | Security |
 |:---------------:|:-----------------:|:--------:|
-| [![Go Report Card](https://goreportcard.com/badge/github.com/bascanada/logviewer)](https://goreportcard.com/report/github.com/bascanada/logviewer) | [![codecov](https://codecov.io/gh/bascanada/logviewer/branch/main/graph/badge.svg)](https://codecov.io/gh/bascanada/logviewer) | [![GitHub CodeQL](https://github.com/bascanada/logviewer/actions/workflows/codeql.yaml/badge.svg)](https://github.com/bascanada/logviewer/actions/workflows/codeql.yaml) |
-| [![Build Status](https://github.com/bascanada/logviewer/actions/workflows/main.yaml/badge.svg)](https://github.com/bascanada/logviewer/actions/workflows/main.yaml) | [![Coverage](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/wquintal/235e796b13295c2cce47516d088c54f7/raw/coverage-badge.json)](https://github.com/bascanada/logviewer) | [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/bascanada/logviewer/badge)](https://securityscorecards.dev/viewer/?uri=github.com/bascanada/logviewer) |
-| [![Go Version](https://img.shields.io/github/go-mod/go-version/bascanada/logviewer)](go.mod) | | [![Dependency Review](https://github.com/bascanada/logviewer/actions/workflows/dependency-review.yml/badge.svg)](https://github.com/bascanada/logviewer/actions/workflows/dependency-review.yml) |
+| [![Go Report Card](https://goreportcard.com/badge/github.com/estran-studio/logviewer)](https://goreportcard.com/report/github.com/estran-studio/logviewer) | [![codecov](https://codecov.io/gh/estran-studio/logviewer/branch/main/graph/badge.svg)](https://codecov.io/gh/estran-studio/logviewer) | [![GitHub CodeQL](https://github.com/estran-studio/logviewer/actions/workflows/codeql.yaml/badge.svg)](https://github.com/estran-studio/logviewer/actions/workflows/codeql.yaml) |
+| [![Build Status](https://github.com/estran-studio/logviewer/actions/workflows/main.yaml/badge.svg)](https://github.com/estran-studio/logviewer/actions/workflows/main.yaml) | [![Coverage](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/wquintal/235e796b13295c2cce47516d088c54f7/raw/coverage-badge.json)](https://github.com/estran-studio/logviewer) | [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/estran-studio/logviewer/badge)](https://securityscorecards.dev/viewer/?uri=github.com/estran-studio/logviewer) |
+| [![Go Version](https://img.shields.io/github/go-mod/go-version/estran-studio/logviewer)](go.mod) | | [![Dependency Review](https://github.com/estran-studio/logviewer/actions/workflows/dependency-review.yml/badge.svg)](https://github.com/estran-studio/logviewer/actions/workflows/dependency-review.yml) |
 
 | Documentation | Release | License |
 |:-------------:|:-------:|:-------:|
-| [![Go Reference](https://pkg.go.dev/badge/github.com/bascanada/logviewer.svg)](https://pkg.go.dev/github.com/bascanada/logviewer) | [![Release](https://img.shields.io/github/v/release/bascanada/logviewer)](https://github.com/bascanada/logviewer/releases/latest) | [![License](https://img.shields.io/github/license/bascanada/logviewer)](LICENSE) |
+| [![Go Reference](https://pkg.go.dev/badge/github.com/estran-studio/logviewer.svg)](https://pkg.go.dev/github.com/estran-studio/logviewer) | [![Release](https://img.shields.io/github/v/release/estran-studio/logviewer)](https://github.com/estran-studio/logviewer/releases/latest) | [![License](https://img.shields.io/github/license/estran-studio/logviewer)](LICENSE) |
 
 </div>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/bascanada/logviewer/main/logo.svg" alt="logviewer logo" width="120" />
+  <img src="https://raw.githubusercontent.com/estran-studio/logviewer/main/logo.svg" alt="logviewer logo" width="120" />
   <br>
   <strong>One CLI to query all your logs</strong>
   <br>
@@ -25,7 +25,7 @@
 
 LogViewer is a unified CLI tool for querying logs from multiple sources with consistent syntax. Stop juggling different tools and query languages—learn once, use everywhere.
 
-![demo](https://raw.githubusercontent.com/bascanada/logviewer/main/demo.gif)
+![demo](https://raw.githubusercontent.com/estran-studio/logviewer/main/demo.gif)
 
 ## Features
 
@@ -45,23 +45,23 @@ LogViewer is a unified CLI tool for querying logs from multiple sources with con
 
 **Homebrew (macOS & Linux)**
 ```bash
-brew tap bascanada/tap
+brew tap estran-studio/tap
 brew install logviewer
 ```
 
 **Scoop (Windows)**
 ```powershell
-scoop bucket add bascanada https://github.com/bascanada/scoop-bucket
+scoop bucket add estran-studio https://github.com/estran-studio/scoop-bucket
 scoop install logviewer
 ```
 
 **Quick Install Script**
 ```bash
-curl -L "https://github.com/bascanada/logviewer/releases/latest/download/logviewer-$(uname -s | tr '[:upper:]' '[:lower:]')-$(uname -m | sed 's/x86_64/amd64/')" -o ./logviewer && chmod +x ./logviewer
+curl -L "https://github.com/estran-studio/logviewer/releases/latest/download/logviewer-$(uname -s | tr '[:upper:]' '[:lower:]')-$(uname -m | sed 's/x86_64/amd64/')" -o ./logviewer && chmod +x ./logviewer
 sudo mv ./logviewer /usr/local/bin/
 ```
 
-See [Installation](https://github.com/bascanada/logviewer/wiki/Installation) for more options (Docker, AUR, build from source).
+See [Installation](https://github.com/estran-studio/logviewer/wiki/Installation) for more options (Docker, AUR, build from source).
 
 ### 2. Configure
 
@@ -131,7 +131,7 @@ logviewer -i app-logs --format "[{{.Timestamp.Format \"15:04:05\"}}] {{.Level}}:
 # Launch the interactive Text User Interface
 logviewer tui -i context
 ```
-> **Note:** The TUI is currently in **Alpha**. See [TUI Documentation](https://github.com/bascanada/logviewer/wiki/TUI-Mode-(Alpha)) for details.
+> **Note:** The TUI is currently in **Alpha**. See [TUI Documentation](https://github.com/estran-studio/logviewer/wiki/TUI-Mode-(Alpha)) for details.
 
 ### AI-powered investigation
 ```bash
@@ -154,30 +154,30 @@ Then ask Claude, Copilot, or Gemini: *"Find all payment errors in the last hour"
 
 ## Documentation
 
-Full documentation is available in the **[GitHub Wiki](https://github.com/bascanada/logviewer/wiki)**:
+Full documentation is available in the **[GitHub Wiki](https://github.com/estran-studio/logviewer/wiki)**:
 
 ### Getting Started
-- [Installation](https://github.com/bascanada/logviewer/wiki/Installation) — All installation methods
-- [CLI Usage](https://github.com/bascanada/logviewer/wiki/CLI-Usage) — Command reference
-- [Configuration](https://github.com/bascanada/logviewer/wiki/Configuration) — Config file setup
+- [Installation](https://github.com/estran-studio/logviewer/wiki/Installation) — All installation methods
+- [CLI Usage](https://github.com/estran-studio/logviewer/wiki/CLI-Usage) — Command reference
+- [Configuration](https://github.com/estran-studio/logviewer/wiki/Configuration) — Config file setup
 
 ### Features
-- [Field Extraction](https://github.com/bascanada/logviewer/wiki/Field-Extraction) — Parse structured data from logs
-- [Templates](https://github.com/bascanada/logviewer/wiki/Templates) — Custom output formatting
-- [Variables](https://github.com/bascanada/logviewer/wiki/Variables) — Dynamic context parameters
-- [Multi-Context Search](https://github.com/bascanada/logviewer/wiki/Multi-Context-Search) — Query multiple sources
+- [Field Extraction](https://github.com/estran-studio/logviewer/wiki/Field-Extraction) — Parse structured data from logs
+- [Templates](https://github.com/estran-studio/logviewer/wiki/Templates) — Custom output formatting
+- [Variables](https://github.com/estran-studio/logviewer/wiki/Variables) — Dynamic context parameters
+- [Multi-Context Search](https://github.com/estran-studio/logviewer/wiki/Multi-Context-Search) — Query multiple sources
 
 ### Backends
-- [Backends Reference](https://github.com/bascanada/logviewer/wiki/Backends) — K8s, Docker, Splunk, OpenSearch, CloudWatch, SSH
-- [HL Integration](https://github.com/bascanada/logviewer/wiki/HL-Integration) — High-performance filtering with hl
+- [Backends Reference](https://github.com/estran-studio/logviewer/wiki/Backends) — K8s, Docker, Splunk, OpenSearch, CloudWatch, SSH
+- [HL Integration](https://github.com/estran-studio/logviewer/wiki/HL-Integration) — High-performance filtering with hl
 
 ### AI Integration
-- [MCP Integration](https://github.com/bascanada/logviewer/wiki/MCP-Integration) — Setup for AI agents
-- [LLM Usage Guide](https://github.com/bascanada/logviewer/wiki/LLM-Usage-Guide) — Best practices for AI
+- [MCP Integration](https://github.com/estran-studio/logviewer/wiki/MCP-Integration) — Setup for AI agents
+- [LLM Usage Guide](https://github.com/estran-studio/logviewer/wiki/LLM-Usage-Guide) — Best practices for AI
 
 ### Help
-- [Troubleshooting](https://github.com/bascanada/logviewer/wiki/Troubleshooting) — Common issues
-- [FAQ](https://github.com/bascanada/logviewer/wiki/FAQ) — Frequently asked questions
+- [Troubleshooting](https://github.com/estran-studio/logviewer/wiki/Troubleshooting) — Common issues
+- [FAQ](https://github.com/estran-studio/logviewer/wiki/FAQ) — Frequently asked questions
 
 ## Example Configuration
 
@@ -224,9 +224,9 @@ contexts:
 
 Contributions are welcome! Please:
 
-- **Report bugs** via [GitHub Issues](https://github.com/bascanada/logviewer/issues)
-- **Request features** via [GitHub Issues](https://github.com/bascanada/logviewer/issues)
-- **Ask questions** in [GitHub Discussions](https://github.com/bascanada/logviewer/discussions)
+- **Report bugs** via [GitHub Issues](https://github.com/estran-studio/logviewer/issues)
+- **Request features** via [GitHub Issues](https://github.com/estran-studio/logviewer/issues)
+- **Ask questions** in [GitHub Discussions](https://github.com/estran-studio/logviewer/discussions)
 - **Submit PRs** for bug fixes or new features
 
 ## License

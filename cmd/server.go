@@ -6,9 +6,9 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/bascanada/logviewer/pkg/api"
-	"github.com/bascanada/logviewer/pkg/log/client/config"
-	"github.com/bascanada/logviewer/pkg/server"
+	"github.com/estran-studio/logviewer/pkg/api"
+	"github.com/estran-studio/logviewer/pkg/log/client/config"
+	"github.com/estran-studio/logviewer/pkg/server"
 	"github.com/spf13/cobra"
 )
 
