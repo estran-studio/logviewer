@@ -64,18 +64,25 @@ func (lr *LogResult) parseBlock(block string) (*client.LogEntry, bool) {
 	// parse it and then remove everything up to the end of the match so the
 	// resulting message doesn't keep the prefix.
 	if lr.regexDate != nil {
-		if loc := lr.regexDate.FindStringIndex(firstLine); loc != nil {
-			matched := firstLine[loc[0]:loc[1]]
+		if locs := lr.regexDate.FindStringSubmatchIndex(firstLine); locs != nil {
+			// Use the first capture group for timestamp parsing when present
+			// (allows regexes like \[(...)\] where brackets are in the match
+			// but not in the value to parse). Fall back to full match otherwise.
+			var matched string
+			if len(locs) >= 4 && locs[2] >= 0 {
+				matched = firstLine[locs[2]:locs[3]]
+			} else {
+				matched = firstLine[locs[0]:locs[1]]
+			}
 			if parsed, err := parseTimestamp(matched); err == nil {
 				entry.Timestamp = parsed
 			}
 			// Preserve any prefix bytes that appear before the timestamp
 			// (e.g., PTY markers). Keep the remainder after the timestamp
 			// as-is so control characters are not lost.
-			prefix := firstLine[:loc[0]]
-			if loc[1] < len(firstLine) {
-				rest := firstLine[loc[1]:]
-				entry.Message = prefix + rest
+			prefix := firstLine[:locs[0]]
+			if locs[1] < len(firstLine) {
+				entry.Message = prefix + firstLine[locs[1]:]
 			} else {
 				entry.Message = prefix
 			}
@@ -412,6 +419,9 @@ func parseTimestamp(v interface{}) (time.Time, error) {
 		}
 		if err != nil {
 			parsed, err = time.ParseInLocation("2006-01-02T15:04:05", t, time.UTC)
+		}
+		if err != nil {
+			parsed, err = time.Parse("02/Jan/2006:15:04:05 -0700", t)
 		}
 		if err != nil {
 			parsed, err = time.ParseInLocation("2006-01-02 15:04:05.000", t, time.Local)

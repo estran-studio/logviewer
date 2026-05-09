@@ -509,6 +509,17 @@ func TestParseTimestamp(t *testing.T) {
 		assert.Equal(t, 26, ts.Second())
 	})
 
+	t.Run("Parses nginx combined log format", func(t *testing.T) {
+		ts, err := parseTimestamp("09/May/2026:20:41:33 +0000")
+		require.NoError(t, err)
+		assert.Equal(t, 2026, ts.Year())
+		assert.Equal(t, time.May, ts.Month())
+		assert.Equal(t, 9, ts.Day())
+		assert.Equal(t, 20, ts.Hour())
+		assert.Equal(t, 41, ts.Minute())
+		assert.Equal(t, 33, ts.Second())
+	})
+
 	t.Run("Parses local time format", func(t *testing.T) {
 		ts, err := parseTimestamp("2024-01-15 10:30:45.123")
 		require.NoError(t, err)
