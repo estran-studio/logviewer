@@ -228,7 +228,18 @@ integration/logs: integration/logs/generator integration/logs/ssh integration/lo
 
 integration/logs/cloudwatch:
 	@echo "Sending logs to CloudWatch..."
-	@cd integration/infra/cloudwatch && ./send-logs.sh
+	@if command -v aws >/dev/null 2>&1; then \
+		cd integration/infra/cloudwatch && ./send-logs.sh; \
+	else \
+		docker run --rm \
+			--network integration_default \
+			-e AWS_ENDPOINT_URL=http://localstack:4566 \
+			-e LOG_FILE=/logs/app.log \
+			-v "$(PWD)/integration/infra/cloudwatch:/scripts" \
+			-v "$(PWD)/integration/infra/logs:/logs" \
+			--entrypoint bash \
+			amazon/aws-cli /scripts/send-logs.sh; \
+	fi
 
 integration/logs/generator: integration/start/logs
 	@echo "Deploying sample logs to Splunk and OpenSearch via log-generator..."

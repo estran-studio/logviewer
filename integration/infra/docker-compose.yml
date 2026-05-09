@@ -65,7 +65,7 @@ services:
     command: server --disable traefik --write-kubeconfig-mode 644
 
   localstack:
-    image: localstack/localstack:latest
+    image: localstack/localstack:3
     container_name: localstack
     ports:
       - "4566:4566"            # LocalStack Gateway
