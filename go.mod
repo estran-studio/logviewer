@@ -15,7 +15,7 @@ require (
 	github.com/charmbracelet/x/exp/teatest v0.0.0-20260122224438-b01af16209d9
 	github.com/docker/cli v29.4.3+incompatible
 	github.com/docker/docker v28.5.2+incompatible
-	github.com/fatih/color v1.18.0
+	github.com/fatih/color v1.19.0
 	github.com/fsnotify/fsnotify v1.9.0
 	github.com/google/uuid v1.6.0
 	github.com/h2non/gock v1.2.0
@@ -84,7 +84,7 @@ require (
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/lucasb-eyer/go-colorful v1.3.0 // indirect
 	github.com/mailru/easyjson v0.7.7 // indirect
-	github.com/mattn/go-colorable v0.1.13 // indirect
+	github.com/mattn/go-colorable v0.1.14 // indirect
 	github.com/mattn/go-localereader v0.0.1 // indirect
 	github.com/mattn/go-runewidth v0.0.19 // indirect
 	github.com/mitchellh/hashstructure/v2 v2.0.2 // indirect
