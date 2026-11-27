@@ -1,6 +1,6 @@
 module github.com/estran-studio/logviewer
 
-go 1.26.0
+go 1.27.0
 
 require (
 	github.com/TylerBrock/colorjson v0.0.0-20200706003622-8a50f05110d2
@@ -146,5 +146,3 @@ require (
 	sigs.k8s.io/structured-merge-diff/v6 v6.4.2 // indirect
 	sigs.k8s.io/yaml v1.6.0 // indirect
 )
-
-replace github.com/rivo/tview => github.com/berlingoqc/tview v0.0.0-20230602175047-5c400211c573

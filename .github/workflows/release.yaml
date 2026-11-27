@@ -19,19 +19,19 @@ jobs:
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 0
-      - name: Set up Go 1.26.0
+      - name: Set up Go 1.27
         uses: actions/setup-go@d8cbb8045d7f43706b9177cceb36c1f91a6644d5 # v7.1.0
         with:
-          go-version: 1.26.11
+          go-version: 1.27.4
       
       - name: Get the version
         id: tag
         run: echo "tag=${GITHUB_REF#refs/*/}" >> $GITHUB_OUTPUT
 
       - name: Login docker
-        run: echo "$GHCR_TOKEN" | docker login ghcr.io -u wquintal --password-stdin
+        run: echo "$GHCR_TOKEN" | docker login ghcr.io -u "$GITHUB_ACTOR" --password-stdin
         env:
-          GHCR_TOKEN: ${{ secrets.GHCR_TOKEN }}
+          GHCR_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Docker build
         run: docker build -t ghcr.io/estran-studio/logviewer:${VERSION} .
