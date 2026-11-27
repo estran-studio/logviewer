@@ -57,7 +57,7 @@ scoop install logviewer
 
 **Quick Install Script**
 ```bash
-curl -L "https://github.com/estran-studio/logviewer/releases/latest/download/logviewer-$(uname -s | tr '[:upper:]' '[:lower:]')-$(uname -m | sed 's/x86_64/amd64/')" -o ./logviewer && chmod +x ./logviewer
+curl -L "https://github.com/estran-studio/logviewer/releases/latest/download/logviewer-$(uname -s | tr '[:upper:]' '[:lower:]')-$(uname -m | sed 's/x86_64/amd64/;s/aarch64/arm64/')" -o ./logviewer && chmod +x ./logviewer
 sudo mv ./logviewer /usr/local/bin/
 ```
 
@@ -226,7 +226,7 @@ Contributions are welcome! Please:
 
 - **Report bugs** via [GitHub Issues](https://github.com/estran-studio/logviewer/issues)
 - **Request features** via [GitHub Issues](https://github.com/estran-studio/logviewer/issues)
-- **Ask questions** in [GitHub Discussions](https://github.com/estran-studio/logviewer/discussions)
+- **Ask questions** via [GitHub Issues](https://github.com/estran-studio/logviewer/issues)
 - **Submit PRs** for bug fixes or new features
 
 ## License
