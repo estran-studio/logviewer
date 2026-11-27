@@ -10,8 +10,11 @@ updates:
       - "dependencies"
       - "go"
     commit-message:
-      prefix: "chore(deps)"
+      prefix: "chore"
       include: "scope"
+    groups:
+      go-minor-patch:
+        update-types: ["minor", "patch"]
 
   # Keep GitHub Actions up to date
   - package-ecosystem: "github-actions"
@@ -23,8 +26,12 @@ updates:
       - "dependencies"
       - "github-actions"
     commit-message:
-      prefix: "chore(deps)"
+      prefix: "chore"
       include: "scope"
+    groups:
+      # Single PR so paired actions (codeql init/analyze) move together
+      github-actions:
+        patterns: ["*"]
 
   # Keep Docker base images up to date
   - package-ecosystem: "docker"
@@ -36,5 +43,5 @@ updates:
       - "dependencies"
       - "docker"
     commit-message:
-      prefix: "chore(deps)"
+      prefix: "chore"
       include: "scope"
